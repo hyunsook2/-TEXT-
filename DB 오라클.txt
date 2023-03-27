@@ -35,7 +35,8 @@ OR
 CREATE TABLE 테이블명(
 칼럼명 자료형 제약조건...
 CONSTRAINT 또 다른 제약조건
-REFERENCES 테이블명(칼럼명) ON DELETE CASCADE << 해당 칼럼을 참조(외래키)하는 엔티티 모두 삭제
+REFERENCES 테이블명(칼럼명) 
+ON DELETE CASCADE << 해당 칼럼을 참조(외래키)하는 엔티티 모두 삭제
 ); << 뒷 부분에 더 추가 가능
 
 제약 조건
@@ -229,7 +230,7 @@ WHERE 절
 칼럼명 (operator) 값
 
 비교 연산자(operator)
-= < > <= >= <>(not의 의미)
+= < > <= >= != <>(not의 의미)
 각 조건별 연산  AND, OR
 IS NULL
 IS NOT NULL
@@ -251,8 +252,10 @@ EX)
 ___S  4자리며 S로 끝나는 문자열 검색
 
 %S% 중간에 S가 들어가는 문자열 검색
+%_A% 두번쨰부터 A가 포함된 문자열검색
 
-
+WHERE 절에 서브쿼리로 들어가는 경우
+리턴 조건(조건을 괄호로 묶고 앞에 NOT을 붙이면 부정이 된다)
 
 
 
