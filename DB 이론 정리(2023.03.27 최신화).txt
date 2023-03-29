@@ -421,3 +421,7 @@ INSTR(ⓐ,ⓑ,ⓒ) ⓐ:적용 칼럼 ⓑ:시작 자리 ⓒ:ⓒ번째 찾은 자�
 프로시저:일련의 쿼리를 마치 하나의 함수처럼 실행하기 위한 쿼리의 집합
 PL/SQL 절차형 SQL 언어
 NoSQL: 비관계형 데이터베이스 유형
+
+SELECT R.REGION_NAME , COUNT(1) FROM CONTRIES C , LOCATIONS L , REGIONS R
+WHERE C.COUNTRY_ID = L.COUNTRY_ID AND C.REGION_ID = R.REGION_ID
+GROUP BY R.REGION_NAME;
