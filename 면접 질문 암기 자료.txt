@@ -227,3 +227,5 @@ POJO(Plain Old Java Object)는 말 그대로 간단한 자바 오브젝트를 �
 더 출력 속도가 빠른 쪽은 BufferedReader이다.
 제일 중요한 차이점은 BufferedReader는 동기화를 지원해주지만 Scanner는 동기화 지원을 해주지 않는다.
 바인딩(binding): 프로그램에 사용된 구성 요소의 실제 값 또는 프로퍼티를 결정짓는 행위
+
+ 영속성(persistence): 데이터를 생성한 프로그램의 실행이 종료되더라도 사라지지 않는 데이터의 특성
